@@ -1,0 +1,300 @@
+/*Desktop*/
+
+@media screen and (max-width: 1200px) {
+    section {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+
+}
+
+/*Tablet*/
+
+@media screen and (max-width: 1030px) {
+
+    /* Seções gerais */
+    section {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    header {
+        padding: 20px 30px;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #f1f5f9;
+        z-index: 999;
+        transition: transform .3s ease;
+        transform: translateX(100%);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    .nav.ativo {
+        transform: translateX(0);
+    }
+
+    .menu {
+        display: block;
+        width: 35px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .hamb {
+        width: 100%;
+        height: 3px;
+        background: var(--preto);
+        border-radius: 2px;
+        transition: all .3s ease;
+    }
+
+    .menu.ativo .hamb:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.ativo .hamb:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.ativo .hamb:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #hero {
+        margin-top: 180px;
+        flex-flow: column-reverse nowrap;
+        gap: 80px;
+    }
+
+    .txt-hero {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .titulo-hero {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .desc-hero {
+        font-size: 14px;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .img-hero {
+        width: 420px;
+    }
+
+    .titulo-serv {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .desc-serv {
+        font-size: 14px;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .cont-servs {
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #portfolio {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        gap: 0;
+    }
+
+    .img-portfolio {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #depoimentos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .card-depoimento {
+        width: 260px;
+    }
+
+    .txt-depoimento {
+        font-size: 13px;
+    }
+
+    #faq {
+        width: 90%;
+    }
+
+    .titulo-faq {
+        font-size: 14px;
+    }
+
+    .resp-faq {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    #contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 700px;
+        height: 400px;
+    }
+
+    .txt-ctt {
+        width: 100%;
+        max-width: 700px;
+        height: 400px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* ================ CELULAR ==================== */
+
+@media screen and (max-width: 576px) {
+
+    section {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .style-mob .btn-orc:first-of-type {
+        display: none;
+    }
+
+    .menu {
+        width: 28px;
+        height: 20px;
+    }
+
+    .hamb {
+        height: 2.5px;
+    }
+
+    #hero {
+        margin-top: 130px;
+    }
+
+    .titulo-hero {
+        font-size: 28px;
+    }
+
+    .desc-hero {
+        font-size: 13px;
+    }
+
+    .img-hero {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .cont-btns {
+        flex-flow: column nowrap;
+        gap: 15px;
+    }
+
+    .titulo-serv {
+        font-size: 32px;
+    }
+
+    .desc-serv {
+        font-size: 13px;
+    }
+
+    .card-serv {
+        max-width: 280px;
+        text-align: center;
+    }
+
+    #portfolio {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .img-portfolio {
+        width: 100%;
+        display: block;
+    }
+
+    .card-depoimento {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .titulo-faq {
+        font-size: 13px;
+    }
+
+    .resp-faq {
+        font-size: 12px;
+    }
+
+    #contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 700px;
+        height: 400px;
+    }
+
+    .txt-ctt {
+        width: 100%;
+        max-width: 700px;
+        height: 400px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
