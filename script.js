@@ -12,15 +12,12 @@ faqs.forEach(faq => {
 
 // efeito de scroll
 
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header')
+const header = document.querySelector('header');
 
-    if (window.scrollY > 10) {
-        header.classList.add('scroll')
-    } else {
-        header.classList.remove('scroll')
-    }
-})
+window.addEventListener('scroll', () => {
+    // Usar 50px ou mais evita que o efeito "flicker" (pisque) logo no topo
+    header.classList.toggle('scroll', window.scrollY > 50);
+});
 
 // menu hamburguer
 
