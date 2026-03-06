@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     scroll-margin-top: 120px;
 }
 
@@ -71,7 +72,6 @@ header.scroll {
 }
 
 .links {
-    text-decoration: none;
     font-family: var(--inter);
     font-size: 14px;
     color: var(--preto);
@@ -87,12 +87,9 @@ header.scroll {
     font-size: 12px;
     font-weight: 600;
     color: var(--branco);
-    width: 145px;
-    height: 38px;
     background-color: var(--azul);
-    border: none;
-    border-radius: 90px;
-    cursor: pointer;
+    border-radius: 99px;
+    padding: 10px 14px;
 }
 
 .style-mob {
@@ -167,11 +164,10 @@ header.scroll {
     font-size: 12px;
     font-weight: 600;
     color: var(--azul);
-    width: 145px;
-    height: 38px;
     border: 2px solid var(--azul);
     border-radius: 90px;
     cursor: pointer;
+    padding: 10px 24px;
 }
 
 .img-hero {
